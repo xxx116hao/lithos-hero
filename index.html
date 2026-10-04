@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Explore the layers of Earth and the stories held in stone with Lithos." />
+  <title>Lithos — Layers hold tales of time</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="hero" aria-label="Lithos interactive geology hero">
+    <div class="base hero-zoom" aria-hidden="true"></div>
+    <canvas class="mask-canvas" aria-hidden="true"></canvas>
+    <div class="reveal" aria-hidden="true"></div>
+
+    <div class="heading">
+      <h1><span class="line-one hero-anim hero-reveal">Layers hold</span><span class="line-two hero-anim hero-reveal">tales of time</span></h1>
+    </div>
+
+    <div class="bottom-left hero-anim hero-fade">
+      <p>Every layer of sediment records a chapter of our planet, from ancient seabeds to drifting ash, layered across millions of years beneath us.</p>
+    </div>
+
+    <div class="bottom-right hero-anim hero-fade">
+      <p>Our interactive maps let you peel back the crust to trace how stones, fossils, and deep time combine to shape the ground beneath your feet.</p>
+      <button class="dig-button" type="button">Start Digging</button>
+    </div>
+  </main>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="brand"><svg width="26" height="26" viewBox="0 0 256 256" fill="#ffffff" aria-hidden="true"><path d="M 256 256 L 128 256 L 0 128 L 128 128 Z M 256 128 L 128 128 L 0 0 L 128 0 Z" /></svg><span>Lithos</span></div>
+    <div class="nav-pill" role="group" aria-label="Explore Lithos">
+      <button class="active" type="button">Course</button><button type="button">Field Guides</button><button type="button">Geology</button><button type="button">Plans</button><button type="button">Live Tour</button>
+    </div>
+    <button class="signup" type="button">Sign Up</button>
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </nav>
+  <div class="mobile-menu" role="menu" hidden>
+    <button class="active" type="button" role="menuitem">Course</button><button type="button" role="menuitem">Field Guides</button><button type="button" role="menuitem">Geology</button><button type="button" role="menuitem">Plans</button><button type="button" role="menuitem">Live Tour</button><button class="mobile-signup" type="button">Sign Up</button>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
+
+
